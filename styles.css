@@ -1,0 +1,84 @@
+body {
+    background-color: #f5f5f5; /* Light gray background */
+    font-family: 'Helvetica', sans-serif;
+}
+
+.main {
+    padding: 20px;
+    font-family: 'Helvetica', sans-serif;
+    box-shadow: 5px 5px 7px 5px #100000;
+    background-color: #ffffff; /* White background */
+}
+
+.main h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #690096; /* Purple text color */
+    margin-bottom: 30px; /* Added margin for spacing */
+}
+
+input, select {
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid #c464f8; /* Purple border bottom */
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #690096; /* Purple background */
+    border: none;
+    color: #ffffff; /* White text color */
+    padding: 16px 32px;
+    margin: 20px 0; /* Increased margin for spacing */
+    border-radius: 10px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+input[type=submit]:hover {
+    background-color: #7e0c95; /* Darker purple on hover */
+}
+
+/* Styled select */
+.styled-select {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #c464f8; /* Purple border bottom */
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+.styled-select select {
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 100%;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 12px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.styled-select::after {
+    content: "\25BC";
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    pointer-events: none;
+    color: #690096; /* Purple arrow color */
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/* On hover, dropdown arrow color changes */
+.styled-select:hover::after {
+    color: #7e0c95; /* Darker purple arrow color */
+}
